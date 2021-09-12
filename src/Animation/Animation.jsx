@@ -24,6 +24,6 @@ export const BoxAnimation={
 }
 
 export const CardAnimation={
-    hidden:{opacity:0, scale: .5, x: 200},
-    show: {opacity: 1, scale: 1, x:0}
+    hidden:{opacity:0, scale: .5, y: 100},
+    show: {opacity: 1, scale: 1, y:0}
 }

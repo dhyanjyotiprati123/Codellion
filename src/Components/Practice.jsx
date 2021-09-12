@@ -9,9 +9,7 @@ import Card4 from "../assets/cover (4).png"
 const Practice = () => {
     
     return (
-        <div className="practice" 
-         
-        >
+        <div className="practice">
             <div className="container">
                <div className="section mt-lg">
                  <h2 className="section-heading">Practice Advice</h2>
