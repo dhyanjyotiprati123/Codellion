@@ -20,5 +20,10 @@ export const SectionAnimation={
 
 export const BoxAnimation={
     hidden:{opacity:0, scale: .5},
-    show: {opacity: 1, scale: 1},
+    show: {opacity: 1, scale: 1}
+}
+
+export const CardAnimation={
+    hidden:{opacity:0, scale: .5, x: 200},
+    show: {opacity: 1, scale: 1, x:0}
 }
