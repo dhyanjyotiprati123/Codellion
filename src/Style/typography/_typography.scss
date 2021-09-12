@@ -1,0 +1,125 @@
+
+// heading and paragraph
+
+.main-heading{
+    font-weight: 800;
+    font-size: 5.8rem;
+    text-transform: uppercase;
+
+    @include Responsive(phone){
+        font-size: 4.5rem;
+    }
+}
+
+.sub-heading{
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.heading-3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.heading-4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.para{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $font-small;
+    text-transform: capitalize;
+}
+
+// buttons
+
+.btn{
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 5rem;
+    @include Flex;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: $clr-yellow;
+    color: white;
+    transition: all .4s ease-in;
+
+    &:hover{
+        border: 1px solid $clr-blue;
+        color: $clr-blue;
+        background: white;
+    }
+}
+
+.btn-secondary{
+    border: 1px solid $clr-blue;
+    color: $clr-blue;
+    background: white;
+    transition: all .4s ease-in;
+
+    &:hover{
+        text-decoration: underline;
+        background: $clr-yellow;
+        color: white;
+    }
+}
+
+.btn-send{
+    border: .5px solid white;
+    border-radius: 5px;
+    background: $clr-yellow;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 2rem 3rem;
+    color: white;
+}
+
+// helper classes
+
+.control{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.card-blue{
+    background: $clr-blue;
+    color: white;
+}
+
+.text-white{
+    color: white;
+}
+
+.mt-lg{
+    margin-top: 10rem;
+}
+
+.mobile{
+    width: 25rem;
+    padding: 4rem;
+    @include Flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100vh;
+    background: $clr-dark;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: absolute;
+    top: 10rem;
+    left: -30rem;
+    transition: all 1s ease-in;
+    transform: translateX(0);
+}

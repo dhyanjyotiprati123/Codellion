@@ -1,0 +1,62 @@
+
+.contact{
+    width: 100%;
+    padding: 5rem 0;
+    background: url("assets/group.png") center no-repeat;
+    background-size: cover;
+    
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    &-logos{
+       @include Flex-Btn;
+        padding: 3rem 0;
+
+        @include Responsive(phone){
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    &-box{
+        padding: 1rem;
+    }
+
+    &-form{
+       padding: 2.5rem 3.5rem;
+       background: $clr-contact;
+       @include Flex-Btn;
+
+       @include Responsive(phone){
+           flex-direction: column;
+           gap: 2rem;
+       }
+    }
+    &-send{
+        background: #eee;
+        @include Flex-Btn;
+    }
+    &-input{
+        border: none;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+        background: transparent;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    &-consult{
+        background: transparent;
+        @include Flex-Btn;
+
+        @include Responsive(phone){
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}

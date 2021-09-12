@@ -1,0 +1,33 @@
+
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Flex-Btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// media Query section
+
+@mixin Responsive($breakpoint) { 
+    @if $breakpoint == large{
+        @media only screen and (max-width: 1200px){ @content }
+    };
+    @if $breakpoint == tablet-land{
+        @media only screen and (max-width: 992px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet{
+        @media only screen and (max-width: 768px) {
+            @content
+        }
+    };
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 576px){ @content }   
+    };
+};

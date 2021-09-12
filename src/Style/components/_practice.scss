@@ -1,0 +1,35 @@
+.practice{
+    width: 100%;
+    padding: 4rem 0;
+
+    &-cards{
+        @include Flex;
+        gap: 2rem;
+        padding: 4rem 0;
+
+        @include Responsive(tablet){
+           flex-direction: column;
+           gap: 3rem;
+        }
+    }
+}
+
+.practicecard{
+    width: 23rem;
+    background: white;
+
+    @include Responsive(tablet){
+        box-shadow: -10px -10px 15px 3px rgba(0,0,0, .15);
+    }
+
+    &-box{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    &-pic{
+        width: 100%;
+        object-fit: cover;
+    }
+}

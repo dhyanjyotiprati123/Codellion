@@ -1,0 +1,40 @@
+
+.navbar{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    @include Responsive(phone){
+        padding: 3rem 5rem;
+    }
+    
+
+    &-logo{
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @include Responsive(phone){
+            display: none;
+        }
+    }
+    &-item{
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: $font-small;
+    }
+    &-control{
+        display: none;
+
+        @include Responsive(phone){
+            display: block;
+        }
+    }
+}
