@@ -30,4 +30,7 @@
     @if $breakpoint == phone {
         @media only screen and (max-width: 576px){ @content }   
     };
+    @if $breakpoint == phone-sm {
+        @media only screen and (max-width: 400px){ @content }   
+    };
 };

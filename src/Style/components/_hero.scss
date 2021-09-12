@@ -33,6 +33,9 @@
     @include Responsive(phone){
         width: 35rem;
     }
+    @include Responsive(phone-sm){
+        width: 30rem;
+    }
 }
 
 .servicecard{
@@ -44,6 +47,11 @@
     flex-direction: column;
     gap: 1.5rem;
     box-shadow: -5px -5px 15px 2px rgba(0,0,0, .1);
+
+    @include Responsive(phone-sm){
+        width: 30rem;
+        height: 25rem;
+    }
 
     &-pic{
         width: 5rem;

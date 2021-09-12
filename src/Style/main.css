@@ -243,6 +243,12 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .headercard {
+    width: 30rem;
+  }
+}
+
 .servicecard {
   background: white;
   width: 35rem;
@@ -258,6 +264,13 @@ html ::-webkit-scrollbar-thumb {
   gap: 1.5rem;
   -webkit-box-shadow: -5px -5px 15px 2px rgba(0, 0, 0, 0.1);
           box-shadow: -5px -5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 400px) {
+  .servicecard {
+    width: 30rem;
+    height: 25rem;
+  }
 }
 
 .servicecard-pic {
@@ -610,6 +623,12 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+}
+
 .sub-heading {
   font-size: 2.3rem;
   font-weight: 700;
@@ -653,6 +672,12 @@ html ::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    padding: 1rem 1.3rem;
+  }
 }
 
 .btn-primary {
@@ -700,6 +725,12 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   gap: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .control {
+    gap: 1rem;
+  }
 }
 
 .card-blue {
